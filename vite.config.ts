@@ -9,13 +9,11 @@ export default defineConfig({
         monkey({
             entry: "src/main.ts",
             userscript: {
-                icon: "https://backrooms-wiki-cn.wikidot.com/local--favicon/favicon.gif",
+                icon: "https://www.wikidot.com/local--favicon/favicon.gif",
                 namespace: "npm/vite-plugin-monkey",
                 author: "hoah2333",
-                website: "https://backrooms-wiki-cn.wikidot.com",
-                match: [
-                    "https://*.wikidot.com/*",
-                ],
+                website: "https://www.wikidot.com",
+                match: ["http://www.wikidot.com/*", "https://www.wikidot.com/*"],
             },
         }),
     ],
